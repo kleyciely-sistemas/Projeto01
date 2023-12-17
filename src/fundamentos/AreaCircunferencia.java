@@ -1,15 +1,14 @@
 package fundamentos;
 
-public class AreaCircunferencia {
+public class Temperatura {
     public static void main(String[] args) {
-        double raio = 3.4;
-        final double PI = 3.14159;
+        // (°F - 32) * 5/9 = °C
+        final double FATOR = 5.0 / 9.0;
+        final double AJUSTE = 32;
 
-        double area = PI * raio * raio;
-        System.out.println(area);
+        double fahrenheit = 86;
+        final double celsius = (fahrenheit - AJUSTE) * FATOR;
+        System.out.println("O resultado é " + celsius + "°C.");
 
-        raio = 10;
-        area = PI * raio * raio;
-        System.out.println("Área = " + area + "m2.");
     }
 }
